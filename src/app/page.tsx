@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 type Theme = {
@@ -81,6 +82,12 @@ export default function Home() {
           >
             View Demo
           </button>
+          <Link
+            href="/new-code"
+            className={`inline-flex items-center justify-center rounded-full border px-7 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/10 ${theme.card}`}
+          >
+            New code page
+          </Link>
         </div>
 
         <div className="mt-14 grid gap-4 sm:grid-cols-3">
